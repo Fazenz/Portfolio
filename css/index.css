@@ -187,7 +187,7 @@ body {
 
 .card-text {
     font-family: 'SF Pro';
-    font-size: clamp(1em, 2em, 4em);
+    font-size: clamp(1em, 1.5em, 4em);
     line-height: 1.3347;
     letter-spacing: -.01em;
     padding: 0 20px 0 20px;
@@ -597,7 +597,7 @@ body {
     flex-direction: row;
     gap: 12px;
     font-family: 'SF Pro Display Medium';
-    font-size: clamp(2em, 6em, 12em);
+    font-size: clamp(2em, 8em, 12em);
 }
 
 .hiddenn {
@@ -629,13 +629,13 @@ body {
 .work-cards-card {
     display: flex;
     flex-direction: row;
-    gap: 25px;
-    margin: 10% 0 5% 0;
+    gap: 30px;
+    margin: 10% 0 10% 0;
     height: 100vh;
     box-sizing: border-box;
 }
 
-.work-cards-1,.work-cards-2{
+.work-cards-1,.work-cards-2, .work-cards-3{
     display: flex;
     height: 100%;
     max-height: 350px;
@@ -652,7 +652,7 @@ body {
     box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.6);
 }
 
-.work-cards-1:hover,.work-cards-2:hover{
+.work-cards-1:hover,.work-cards-2:hover,.work-cards-3:hover{
     scale: 1.045;
     -webkit-box-shadow: 0px 0px 20px 5px #000000; 
     box-shadow: 0px 0px 20px 5px #000000;
@@ -823,12 +823,46 @@ body {
     fill: #06c;
 }
 
+.iJava {
+    margin: -7px 0 0 -45px;
+}
+
 .iJava text {
     transition: fill .24s ease;
 }
 
 .iJava:hover text {
     fill: #FF7F00;
+}
+
+#languages-box1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.html-logo {
+    transition: all .24s ease;
+}
+
+.html-logo:hover{
+    fill: #e34c26;
+}
+
+.css-logo {
+    margin: -2px 0 0 0;
+    transition: all .24s ease;
+}
+
+.css-logo:hover{
+    fill: #06c;
+}
+
+.JS-logo path {
+    transition: all .24s ease;
+}
+
+.JS-logo:hover path {
+    fill: #F0DB4F;
 }
 
 @media screen and (max-width: 1920px) {
